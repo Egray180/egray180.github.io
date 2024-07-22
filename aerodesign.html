@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ethan Gray</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">back</a></h1>
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Avionics</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+                                
+									<h3 class="major">GNSS-Aided INS</h3>
+									<p>This project is a custom implementation of a loosely coupled extended Kalman filter. The goal of the filter is to provide better flight data for the other software modules. <a href="https://github.com/ubcaerodesign/full-fusion">full-fusion</a> is the primary repository, which features:</p>
+                                    <ul>
+                                        <li>Loosely coupled extended Kalman filter</li>
+                                        <li>Flight path visualizer, attitude visualizer, and flight data graphs</li>
+                                        <li>Testing environment</li>
+                                    </ul>
+                                    <p>Another part of this project is the <a href="https://github.com/ubcaerodesign/full-fusion">data emulator</a>, which provides sensor data for user inputted flight paths (credit to Aceinna for making their GNSS/INS simulation project open source). I used the emulated data to test my software before deploying it in the plane. Final competition variants of the filter can be found in <a href="https://github.com/ubcaerodesign/codex">codex</a>.</p>
+
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images\aerodesign\flight_path_comparison.png" alt="" /></a>
+                                            <p>The red trace in the map (true path) and the blue trace (path generated with the algorithm from emulated IMU and GPS data) overlap almost perfectly once initial GPS noise is filtered out. The green path is raw GPS data.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images\aerodesign\vel_graph.png" alt="" /></a>
+											<p>This graph shows raw velocity from GPS and filtered velocity.</p>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+                    <section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Advanced Fuselage</h2>
+                                <div class="col-12"><span class="image fit"><img src="images\aerodesign\fuse_CAD.png" alt="" /></span></div>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+                                
+                                    <section>
+                                        <h3 class="major">Empennage Attachment</h3>
+                                        <div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images\aerodesign\empennage_attachment_CAD.png" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images\aerodesign\empennage_FEA.png" alt="" /></span></div>
+											</div>
+										</div>
+                                        <p>The empennage attachment connects the vertical and horizontal stabilizers to the tailboom. Worst cases for banking and landing were analyzed, tested with SolidWorks FEA, and physically tested.</p>
+                                        <p><a href="https://docs.google.com/spreadsheets/d/1ycGZ5Yt0bkkygYS0KEAJqaHHq4mmyIsBXb0hepV2ThQ/edit?usp=sharing">This</a> is the spreadsheet that I used to predict loading during banking.</p>
+
+                                        <h3 class="major">Tailboom Bracket</h3>
+                                        <p><span class="image left"><img src="images\aerodesign\tailboom_bracket_CAD.png" alt="" /></span>The tail boom brackets are waterjet out of 0.375” aluminum. I designed them in SolidWorks with DFMA methods and conducted FEA to simulate landing loads. They consist of two pieces — one piece is fixed to the center ribs of the fuselage and the other piece can be screwed on to secure the tail boom.</p>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+
+                                        <h3 class="major">Other Fuselage work</h3>
+                                        <p style="margin-bottom:0;"><span class="image right"><img src="images\aerodesign\real_plane.jpg" alt="" /></span>CAD work on 2022/2023 plane:</p>
+                                        <ul>
+                                            <li>Empennage attachment (shown)</li>
+                                            <li>Tailboom bracket (shown)</li>
+                                            <li>GPS mount</li>
+                                            <li>Ribs with topology analysis for lightning hole placement</li>
+                                            <li>Stringers</li>
+                                            <li>Leading edge</li>
+                                            <li>Cargo bulkhead</li>
+                                        </ul>
+                                        <p style="margin-bottom:0;">Analyses:</p>
+                                        <ul>
+                                            <li><a href="https://docs.google.com/spreadsheets/d/1UzHTvKqQeGBLQkzdmjg2vPq3UHWqS_5WiMjL844ydrE/edit?usp=sharing">Static stability</a></li>
+                                            <li><a href="https://docs.google.com/spreadsheets/d/1YWjOLQ5KF9Cs924PcoCCwGRtTezc6t7sttOZ6y9OzuU/edit?usp=sharing">Tailboom sizing</a></li>
+                                        </ul>
+                                        <br>
+                                    </section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

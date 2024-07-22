@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ethan Gray</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">back</a></h1>
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Night Vision Monocular</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+                                
+									<h3 class="major">Background</h3>
+									<p>My goal for this project was to design a low budget digital night vision monocular. I wanted it to be similar in size to a PVS-14 and to mount to a FAST helmet with standard night vision mounting technology. The current issue with night vision is that there is a low availability of affordable night vision that is compact and helmet compatable. Military grade analog night vision monoculars are the crème de la crème, but they cost thousands of dollars.</p>
+
+									<h3 class="major">Design</h3>
+                                    <p style="margin-bottom:0;">My design expectations:</p>
+                                    <ul>
+                                        <li>Five hour battery life</li>
+                                        <li>Safely rechargeable</li>
+                                        <li>Helmet compatible</li>
+                                        <li>Compact</li>
+                                        <li>Good image quality</li>
+                                    </ul>
+                                    <p>Extensive research and planning went into the selection of all of the components and software for this project. The main design problems were piping data from the camera to the screen, power circuit and battery design, lens selection and placement, and housing design. For data piping, I configured <a href="https://github.com/juj/fbcp-ili9341">this</a> SPI-based display driver and wrote the software for copying the camera data to the frame buffer with MMAL API. I selected the battery and the power circuit boards to meet the power requirements of the Raspberry Pi, and to meet my expectations for the device. Research on convex lenses and general optical concepts helped me select a lens and design the housing. The housing design took three revisions, with fixes/improvements made in electronics storage, ease of assembly, and mounting features. Visit the <a href="https://github.com/Egray180/night-vision-monocular">github repo</a> for full details.</p>
+
+                                    <h3 class="major">Results</h3>
+									<p style="margin-bottom:0;">Coupled with an IR flashlight, the night vision monocular allowed me to see clearly in dark rooms. The adjustment available in the mounts and in the helmet makes the setup fit universally, and the unit cost ended up coming in at around $150, which is less than comparable units on the market. I have tested at 30fps, but 60fps should work too. For more pictures of the device and of my helmet setup, see the <a href="https://github.com/Egray180/night-vision-monocular">github repo</a>.</p>
+
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/night_vision/dark_test1.jpeg" alt="" /></a>
+											<h3 class="major">Test in dark basement</h3>
+                                            <p>This test demonstrates the night vision monocular working in my basement. The black surrounding the circular image shows how dark the room was at the time of the test (too dark to see anything with eyes).</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/night_vision/dark_test2.jpeg" alt="" /></a>
+											<p>This is another angle from the same test.</p>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ethan Gray</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">back</a></h1>
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Titan Endurance Project</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+                                
+                                    <h3 class="major">Background</h3>
+									<p>The Titan spacecraft system is a two-body system consisting of a launcher and an orbiter capable of deploying spheres into a gravity well that represents the gravitational field of Titan. The launcher launches the orbiter vehicle to pass the gravity well, and the orbiter releases the sphere such that it moves into the gravity well. The sphere represents a landing craft to explore the surface of the moon. The real mission has recently been confirmed by NASA, with an anticipated launch date of July 2028.</p>
+                                    
+                                    <h3 class="major">My Work</h3>
+                                    <ul>
+                                        <li>Developed a MATLAB script for optimizing trajectories of the lander given the properties of the lander and the target velocities for the round</li>
+                                        <li>Wrote the firmware for the Arduino</li>
+                                        <li>Designed the orbiter in SolidWorks</li>
+                                        <li>Laser cut and 3D printed the parts in the orbiter assembly</li>
+                                        <li>Specified wheels, servo, chassis wood (material and thickness), optical encoder, battery, and bearings</li>
+                                        <li>Oversaw project administration including writing reports, updating documentation and logs, tracking project costs, and setting team meetings and deadlines</li>
+                                    </ul>
+                                    
+
+
+                                    <a class="image">
+                                        <img src="images\titan_endurance\orbiter1.jpg" alt="" width="500" height="auto"/>
+                                        <figcaption>Orbiter</figcaption>
+                                    </a>
+                                    <br>
+                                    <video controls>
+                                        <source src="images\titan_endurance\comp_run.mp4" type="video/mp4">
+                                    </video>
+                                    <figcaption>Competition video</figcaption>
+                                    <br>
+
+                                    <h3 class="major">MATLAB Simulation</h3>
+                                    <p>I wanted to maximize the time that the sphere spent in the gravity well before dropping out the bottom (for the most points) so I wrote a script for simulation. The script allows the user to input information about the sphere, launch velocity of the orbiter, and launch location relative to the gravity well, and outputs simulation results. The output from the script allows the user to update the Arduino firmware, which controls the launch of the sphere using an optical encoder.</p>
+                                    <a class="image">
+                                        <img src="images\titan_endurance\sim2.png" alt="" width="500" height="auto"/>
+                                        <figcaption>One path</figcaption>
+                                        <img src="images\titan_endurance\sim1.png" alt="" width="500" height="auto"/>
+                                        <figcaption>Multiple release points</figcaption>
+                                        <img src="images\titan_endurance\sim3.png" alt="" width="500" height="auto"/>
+                                        <figcaption>Multiple release angles for stationary launch</figcaption>
+                                    </a>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
