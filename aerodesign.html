@@ -41,7 +41,7 @@
                                         <li>Flight path visualizer, attitude visualizer, and flight data graphs</li>
                                         <li>Testing environment</li>
                                     </ul>
-                                    <p>Another part of this project is the <a href="https://github.com/ubcaerodesign/full-fusion">data emulator</a>, which provides sensor data for user inputted flight paths (credit to Aceinna for making their GNSS/INS simulation project open source). I used the emulated data to test my software before deploying it in the plane. Final competition variants of the filter can be found in <a href="https://github.com/ubcaerodesign/codex">codex</a>.</p>
+                                    <p>Another part of this project is the <a href="https://github.com/Egray180/gnss-ins-sim">data emulator</a>, which provides sensor data for user inputted flight paths (credit to Aceinna for making their GNSS/INS simulation project open source). I used the emulated data to test my software before deploying it in the plane. Final competition variants of the filter can be found in <a href="https://github.com/ubcaerodesign/codex">codex</a>.</p>
 
 									<section class="features">
 										<article>
@@ -79,19 +79,18 @@
 												<div class="col-4"><span class="image fit"><img src="images\aerodesign\empennage_FEA.png" alt="" /></span></div>
 											</div>
 										</div>
-                                        <p>The empennage attachment connects the vertical and horizontal stabilizers to the tailboom. Worst cases for banking and landing were analyzed, tested with SolidWorks FEA, and physically tested.</p>
-                                        <p><a href="https://docs.google.com/spreadsheets/d/1ycGZ5Yt0bkkygYS0KEAJqaHHq4mmyIsBXb0hepV2ThQ/edit?usp=sharing">This</a> is the spreadsheet that I used to predict loading during banking.</p>
+                                        <p>The empennage attachment connects the vertical and horizontal stabilizers to the tailboom. Worst cases for banking and landing were analyzed, tested with SolidWorks FEA, and physically tested. For FEA inputs, I calculated the moment that would be exerted on the part if the plane were to bank 45 degrees in one second, and the force on the part from landing. This design is a completely reimagined version of the part that was used in previous years, which was waterjet pieces of carbon fiber screwed together to clamp the tail boom and spars. As such, it required extensive concept explortaion and thought to design the part, and about 5 revisions in SolidWorks.</p>
 
                                         <h3 class="major">Tailboom Bracket</h3>
-                                        <p><span class="image left"><img src="images\aerodesign\tailboom_bracket_CAD.png" alt="" /></span>The tail boom brackets are waterjet out of 0.375” aluminum. I designed them in SolidWorks with DFMA methods and conducted FEA to simulate landing loads. They consist of two pieces — one piece is fixed to the center ribs of the fuselage and the other piece can be screwed on to secure the tail boom.</p>
+                                        <p><span class="image left"><img src="images\aerodesign\tailboom_bracket_CAD.png" alt="" /></span>I designed the tail boom brackets in SolidWorks with DFMA methods and conducted FEA to simulate landing loads. They consist of two pieces — one piece is fixed to the center ribs of the fuselage and the other piece can be screwed on to secure the tail boom. They are cut out of 0.375” aluminum with a waterjet cutter, and the holes are added with a drill press after cutting and sanding.</p>
                                         <br>
                                         <br>
                                         <br>
                                         <br>
                                         <br>
 
-                                        <h3 class="major">Other Fuselage work</h3>
-                                        <p style="margin-bottom:0;"><span class="image right"><img src="images\aerodesign\real_plane.jpg" alt="" /></span>CAD work on 2022/2023 plane:</p>
+                                        <h3 class="major">More Fuselage work</h3>
+                                        <p style="margin-bottom:0;"><span class="image right"><img src="images\aerodesign\real_plane.jpg" alt="" /></span>For manufacturing, I was trained for laser cutting, waterjet cutting, CNC machining, and carbon fiber manufacturing. I designed and CNCed molds for carbon fiber wet layups to manufacture the leading edge and transition region. I used the laser cutter to manufacture wood components, and the waterjet cutter to cut carbon fiber sheets and aluminum. For parts like the empennage attachment and gps mount, I used a 3D printer to make them. My CAD work for the 2023 plane includes:</p>
                                         <ul>
                                             <li>Empennage attachment (shown)</li>
                                             <li>Tailboom bracket (shown)</li>
