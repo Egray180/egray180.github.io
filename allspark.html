@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ethan Gray</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">back</a></h1>
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>AllSpark</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+                                
+									<h3 class="major">Background</h3>
+									<p>My goal for this project was to design a modular device that could be used to measure forces on wall-mounted products. Each unit clamps one corner of the test jig, with 4 sensors in each unit. This configuration of the sensors allows the AllSparks to measure forces normal to the jig (1 axis), shear forces (2 more axes), and torque in all three axes.</p>
+
+									<h3 class="major">Design</h3>
+                                    <p style="margin-bottom:0;">The project can be broken down into the following categories:</p>
+                                    <ul>
+                                        <li>PCB design</li>
+                                        <li>Mechanical design</li>
+                                        <li>Host-side software</li>
+                                        <li>ESP32 firmware</li>
+                                        <li>Calibration and validation</li>
+                                    </ul>
+                                    <p>I designed a custom 4 layer PCB for this project around an ESP32-C3-MINI-1-N4. The PCB runs on x2 L91 batteries under normal operating circumstances, but can also be powered over micro USB, which is also the primary flashing method. The board features a single-supply AFE, and power miltiplexing to select between power inputs. I spent a lot of time checking the design guidelines in the ESP32 datasheets to get good RF performance and signal integrity. 
+										The mechanical design required a lot of thought, creativity, and research to come up with the high-level architecture. The approach that this design takes is not conventional, but I wanted a solution that was modular and unique. The mechanical assembly for each unit has four 3D-printed parts, and each unit is designed to withstand 100 lbs, which aligns with the sensor range. The system as a whole can then measure up to 400 lbs. 
+										The software enables wireless data transmission from multiple ESP32 devices to a host computer via Wi-Fi using WebSockets. Each ESP32 reads analog sensor data, packages it into JSON, and transmits it to a Python-based GUI running on the laptop. The GUI processes the data and displays key metrics in real time. The host-side software has multi-client support so that you can connect the whole system, and you can calibrate from the host after the hardware is setup. 
+										Please see the <a href="https://github.com/Egray180/allspark" class="repo-button" target="_blank"><i class="fab fa-github"></i> github repo</a> for full details.</p>
+
+                                    <h3 class="major">Final Product</h3>
+									<p style="margin-bottom:0;">AllSpark was successful in characterizing wall-mounted product performance in my testing. One drawback was that calibrating could be difficult because if the setup flexed, then the jig was not parallel to the sensors anymore. I designed another part to mitigate this issue, but I still had to be mindful of it when using the setup because the jig (3/4" plywood) flexes differently depending on where you apply force.</p>
+
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/allspark/Schematic.jpg" alt="" /></a>
+											<h3 class="major">Schematic</h3>
+                                            <p>The power circuits are on the left, the AFE is at the top, and the ESP32 with peripherals is on the right.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/allspark/set1.jpg" alt="" /></a>
+											<p>Full set manufactured.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/allspark/PCB_Top_3D.jpg" alt="" /></a>
+											<p>Render of the PCB top.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/allspark/PCB_Bot_3D.jpg" alt="" /></a>
+											<p>Render of the PCB bottom.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/allspark/mounted_well1.jpg" alt="" /></a>
+											<p>This image shows the working setup. You mount the device that you want to test to the plywood jig, and the units will transmit the sensor values, which get processed and displayed on the host.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/allspark/corner_letters.jpg" alt="" /></a>
+											<p>Sensor interface.</p>
+										</article>
+									</section>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

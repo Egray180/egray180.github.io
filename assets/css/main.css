@@ -101,9 +101,12 @@ input, select, textarea {
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3464,8 +3467,10 @@ input, select, textarea {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto, cover;
-				background-position: center, center;
+				background-size: auto,
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3574,8 +3579,10 @@ input, select, textarea {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
@@ -3585,8 +3592,10 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3600,7 +3609,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 
@@ -4062,8 +4072,10 @@ input, select, textarea {
 		#footer {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-size: auto,
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
@@ -4142,3 +4154,57 @@ input, select, textarea {
 		}
 
 	}
+
+/* Remove angled divider pseudo-elements completely */
+.wrapper:before,
+.wrapper:after,
+.wrapper.style1:before,
+.wrapper.style1:after,
+.wrapper.style2:before,
+.wrapper.style2:after,
+.wrapper.style3:before,
+.wrapper.style3:after,
+.wrapper.spotlight:before,
+.wrapper.spotlight:after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Ensure wrappers stack cleanly */
+.wrapper {
+  margin: 0 !important;
+  padding-top: 4em;   /* adjust spacing as needed */
+  padding-bottom: 4em;
+}
+
+a.repo-link {
+	border-bottom: none !important;
+  color: #ffd700;              /* gold/yellow for visibility */
+  font-weight: bold;
+  text-decoration: underline;  /* underline so it's obvious */
+  font-size: 1.05em;
+}
+
+a.repo-link:hover {
+  color: #ffffff;              /* invert on hover */
+  background: #5b6ba6;         /* subtle highlight */
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+a.repo-button {
+	border-bottom: none !important;
+  display: inline-block;
+  background: #5b6ba6;
+  color: #2e3141;
+  font-weight: bold;
+  padding: 0.1em 0.2em;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+}
+
+a.repo-button:hover {
+  background: #5b6ba6;
+  color: #ffffff;
+}

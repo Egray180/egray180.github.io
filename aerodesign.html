@@ -35,17 +35,18 @@
 								<div class="inner">
                                 
 									<h3 class="major">GNSS-Aided INS</h3>
-									<p>This project is a custom implementation of a loosely coupled extended Kalman filter. The goal of the filter is to provide better flight data for the other software modules. <a href="https://github.com/ubcaerodesign/full-fusion">full-fusion</a> is the primary repository, which features:</p>
+									<p>This project is a custom implementation of a loosely coupled extended Kalman filter. The goal of the filter is to provide better flight data for the other software modules. <a href="https://github.com/ubcaerodesign/full-fusion" class="repo-button" target="_blank"><i class="fab fa-github"></i> full fusion</a> is the primary repository from the earlier versions, which features:</p>
                                     <ul>
                                         <li>Loosely coupled extended Kalman filter</li>
                                         <li>Flight path visualizer, attitude visualizer, and flight data graphs</li>
                                         <li>Testing environment</li>
                                     </ul>
-                                    <p>Another part of this project is the <a href="https://github.com/Egray180/gnss-ins-sim">data emulator</a>, which provides sensor data for user inputted flight paths (credit to Aceinna for making their GNSS/INS simulation project open source). I used the emulated data to test my software before deploying it in the plane. Final competition variants of the filter can be found in <a href="https://github.com/ubcaerodesign/codex">codex</a>.</p>
+                                    <p>Another part of this project is the <a href="https://github.com/Egray180/gnss-ins-sim">data emulator</a>, which provides sensor data for user inputted flight paths (credit to Aceinna for making their GNSS/INS simulation project open source). I used the emulated data to test my software before deploying it in the plane. Final competition variants of the python filter can be found in <a href="https://github.com/ubcaerodesign/codex">codex</a>. 
+										I later ported the software to C so that we could run it on our STM32 MCU, and used CMSIS-DSP for linear algebra. <a href="https://github.com/Egray180/sensor-fusion-c" class="repo-button" target="_blank"><i class="fab fa-github"></i> sensor fusion c</a> has the most recent version, which also includes other improvements to the algorithm.</p>
 
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images\aerodesign\flight_path_comparison.png" alt="" /></a>
+											<a href="#" class="image"><img src="images\aerodesign\cfusion_map1.png" alt="" /></a>
                                             <p>The red trace in the map (true path) and the blue trace (path generated with the algorithm from emulated IMU and GPS data) overlap almost perfectly once initial GPS noise is filtered out. The green path is raw GPS data.</p>
 										</article>
 										<article>
